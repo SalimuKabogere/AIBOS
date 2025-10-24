@@ -14,7 +14,11 @@ Then the backend repo is at [https://github.com/SalimuKabogere/Backend-AIBOS](ht
 
 ## 🌐 Live Demo
 
-- Frontend: [https://aibos-zeta.vercel.app/](https://aibos-zeta.vercel.app/)
+- The live demo for the EezyTask webasite is at: [https://aibos-zeta.vercel.app/](https://aibos-zeta.vercel.app/)
+-This is where you will access everything that you need to manage your tasks
+-This website employs a simple UI that uses the Black anc White colors majorly that keeps it simple and intuitive
+
+Then the Backend API is live at a free plan of render and can also be accessible at the link provided below
 - Backend API: [https://backend-aibos.onrender.com/api/](https://backend-aibos.onrender.com/api/)
 
 > The frontend communicates with the live backend. 
