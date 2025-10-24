@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api/auth';
+// Use the shared API base URL and append /auth for auth endpoints.
+const API_ROOT = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000/api';
+const API_BASE_URL = `${API_ROOT.replace(/\/+$/, '')}/auth`;
 
 // Create axios instance
 const api = axios.create({
@@ -66,7 +68,7 @@ export const authService = {
       if (error.response && error.response.data) {
         throw error.response.data;
       } else if (error.request) {
-        throw { error: 'Network error: Unable to connect to server. Is the Django server running at http://127.0.0.1:8000?' };
+        throw { error: `Network error: Unable to connect to server at ${API_ROOT}.` };
       } else {
         throw { error: 'Registration failed: ' + error.message };
       }
@@ -91,7 +93,7 @@ export const authService = {
       if (error.response && error.response.data) {
         throw error.response.data;
       } else if (error.request) {
-        throw { error: 'Network error: Unable to connect to server. Is the Django server running at http://127.0.0.1:8000?' };
+        throw { error: `Network error: Unable to connect to server at ${API_ROOT}.` };
       } else {
         throw { error: 'Login failed: ' + error.message };
       }
