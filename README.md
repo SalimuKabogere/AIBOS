@@ -1,11 +1,16 @@
-# AIBOS Frontend
+# EezyTask
 
-This is the **React frontend** for the TaskMaster app, part of the **AIBOS project**.  
+This is the **React frontend** for the EazyTask web app, part of the **AIBOS project**.  
 It provides a user interface for managing tasks, including **drag-and-drop task management**, task creation, filtering, and authentication (login/register).
 
 The frontend communicates with a **Django REST Framework (DRF) backend** via API calls.
 
 ---
+
+## Repositories
+-The current repo is for the UI developed using React.js
+Then the backend repo is at [https://github.com/SalimuKabogere/Backend-AIBOS](https://github.com/SalimuKabogere/Backend-AIBOS)
+-You can visit the above puplic backend repo to see the structure of the code.
 
 ## 🌐 Live Demo
 
